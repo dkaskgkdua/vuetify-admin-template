@@ -1,0 +1,6 @@
+# 코드 컨벤션 세팅
+[*.{js,jsx,ts,tsx,vue}]
+indent_style = space
+indent_size = 2 #여백은 스페이스 2칸
+trim_trailing_whitespace = true #문자 앞 공백 제거
+insert_final_newline = true #파일 저장시 끝은 새줄로 끝
