@@ -59,7 +59,8 @@ export default {
     drawer: false,
     items: [
       { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
-      { title: 'Photos', icon: 'mdi-image', to:'/grid-system' },
+      { title: 'GridSystem', icon: 'mdi-image', to:'/grid-system' },
+      { title: 'GridListPage', icon: 'mdi-image', to:'/grid-list-page' },
     ],
     right: null,
   }),

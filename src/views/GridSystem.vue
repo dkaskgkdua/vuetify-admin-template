@@ -116,28 +116,183 @@
       </v-row>
     </v-card>
     <v-card class="mt-5 pa-3">
-      <v-layout>
-        <v-flex>
-          <v-card class="pa-3" outlined>
+      <v-row
+        justify="end"
+        dense
+      >
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            justify end
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
             Col
           </v-card>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex>
-          <v-card class="pa-3" outlined>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
             Col
           </v-card>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex>
-          <v-card class="pa-3" outlined>
+        </v-col>
+      </v-row>
+    </v-card>>
+    <v-card class="mt-5 pa-3">
+      <v-row
+        justify="center"
+        dense
+      >
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            justify center
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
             Col
           </v-card>
-        </v-flex>
-      </v-layout>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+      </v-row>
     </v-card>
+    <v-card class="mt-5 pa-3">
+      <v-row
+        justify="start"
+        dense
+      >
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            justify start
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+    <v-card class="mt-5 pa-3">
+      <v-row
+        justify="space-around"
+        dense
+      >
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            justify space around
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+    <v-card class="mt-5 pa-3">
+      <v-row
+        justify="space-between"
+        dense
+      >
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            justify space around
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+<!--    <v-card class="mt-5 pa-3">-->
+<!--      <v-layout>-->
+<!--        <v-flex>-->
+<!--          <v-card class="pa-3" outlined>-->
+<!--            Col-->
+<!--          </v-card>-->
+<!--        </v-flex>-->
+<!--      </v-layout>-->
+<!--      <v-layout>-->
+<!--        <v-flex>-->
+<!--          <v-card class="pa-3" outlined>-->
+<!--            Col-->
+<!--          </v-card>-->
+<!--        </v-flex>-->
+<!--      </v-layout>-->
+<!--      <v-layout>-->
+<!--        <v-flex>-->
+<!--          <v-card class="pa-3" outlined>-->
+<!--            Col-->
+<!--          </v-card>-->
+<!--        </v-flex>-->
+<!--      </v-layout>-->
+<!--    </v-card>-->
   </v-container>
 </template>
 
