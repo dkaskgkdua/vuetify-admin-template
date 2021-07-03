@@ -5,38 +5,9 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer />
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
-    <v-navigation-drawer app>
+    <v-navigation-drawer app v-model="drawer">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -71,7 +42,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <router-view />
+      <v-container fluid>
+        <router-view />
+      </v-container>
+
     </v-main>
   </v-app>
 </template>
@@ -82,6 +56,7 @@ export default {
   name: 'App',
 
   data: () => ({
+    drawer: false,
     items: [
       { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
       { title: 'Photos', icon: 'mdi-image', to:'/grid-system' },
