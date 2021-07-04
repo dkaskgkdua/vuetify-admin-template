@@ -5,10 +5,45 @@
         Typography
       </v-card-title>
       <v-container class="grey lighten-3">
-        <v-card
+        <v-card-text
           class="pa-3"
           outlined
         >
+          <v-card
+            class="pa-3 text-h2 primary lighten-2"
+          >
+            primary lighten-2
+          </v-card>
+          <v-card
+            class="pa-3 text-h2 secondary"
+          >
+            secondary
+          </v-card>
+          <v-card
+            class="pa-3 text-h2 error darken-3"
+          >
+            error darken-3
+          </v-card>
+          <v-card
+            class="pa-3 text-h2 primary--text"
+          >
+            컨텐츠
+          </v-card>
+          <v-card
+            class="pa-3 text-h2 secondary--text"
+          >
+            컨텐츠
+          </v-card>
+          <v-card
+            class="pa-3 text-h2 error--text"
+          >
+            컨텐츠
+          </v-card>
+          <v-card
+            class="pa-3 text-h2 pink"
+          >
+            컨텐츠
+          </v-card>
           <p class="text-h1">
             Heading 1
           </p>
@@ -60,7 +95,7 @@
           BUTTON
           Caption
           OVERLINE
-        </v-card>
+        </v-card-text>
       </v-container>
     </v-card>
   </v-container>
