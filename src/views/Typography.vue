@@ -5,6 +5,12 @@
         Typography
       </v-card-title>
       <v-container class="grey lighten-3">
+        <v-card
+          class="pa-3 d-none d-sm-block"
+          outlined
+        >
+          크기에 따른 display
+        </v-card>
         <v-card-text
           class="pa-3"
           outlined

@@ -5,9 +5,25 @@
       color="primary"
       dark
     >
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
     </v-app-bar>
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer
+      v-model="drawer"
+      dark
+      app
+      :src="require('@/assets/sidebar.jpg')"
+    >
+      <template
+        v-slot:img="props"
+      >
+
+        <v-img
+          :gradient="gradient"
+          v-bind="props"
+        >
+
+        </v-img>
+      </template>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -30,6 +46,8 @@
           :key="item.title"
           link
           :to="item.to"
+          active-class="primary"
+          class="py-1"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -45,7 +63,6 @@
       <v-container fluid>
         <router-view />
       </v-container>
-
     </v-main>
   </v-app>
 </template>
@@ -57,12 +74,17 @@ export default {
 
   data: () => ({
     drawer: false,
+    gradient: 'rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)',
     items: [
       { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
       { title: 'GridSystem', icon: 'mdi-image', to:'/grid-system' },
       { title: 'Breakpoints', icon: 'mdi-image', to:'/breakpoints' },
       { title: 'GridListPage', icon: 'mdi-image', to:'/grid-list-page' },
       { title: 'Typography', icon: 'mdi-image', to:'/typography' },
+      { title: 'Tables', icon: 'mdi-table-settings', to:'/tables' },
+      { title: 'Forms', icon: 'mdi-form-select', to:'/forms' },
+      { title: 'Buttons', icon: 'mdi-gesture-tap-button', to:'/buttons' },
+      { title: 'Icons', icon: 'mdi-emotion-excited-outline', to:'/icons' },
     ],
     right: null,
   }),

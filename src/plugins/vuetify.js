@@ -4,6 +4,10 @@ import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify);
 
+const theme = {
+  primary : colors.deepOrange
+}
+
 export default new Vuetify({
   breakpoint: {
     // 모바일 사이즈 설정 기본은 => 1264
@@ -24,16 +28,7 @@ export default new Vuetify({
       themeCache: undefined,
     },
     themes: {
-      light: {
-        primary: '#1976D2',
-        secondary: '#424242',
-        accent: '#82B1FF',
-        error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
-        warning: '#FB8C00',
-        pink: colors.red.lighten4,
-      },
+      light: theme,
       dark: {
         primary: '#2196F3',
         secondary: '#424242',
