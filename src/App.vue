@@ -1,5 +1,8 @@
 <template>
-  <router-view></router-view>
+  <v-fab-transition mode="out-in">
+    <router-view></router-view>
+  </v-fab-transition>
+
 </template>
 
 <script>
