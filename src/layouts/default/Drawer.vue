@@ -23,11 +23,16 @@
 
 <script>
 
-import DefaultDrawerHeader from "@/layouts/default/DrawerHeader";
-import DefaultList from "@/layouts/default/List";
 export default {
   name: "DefaultDrawer",
-  components: {DefaultList, DefaultDrawerHeader},
+  components: {
+    DefaultList : () => import(
+      /* webpackChunkName: "default-list" */
+      '@/layouts/default/List'),
+    DefaultDrawerHeader : () => import(
+      /* webpackChunkName: "default-list" */
+      '@/layouts/default/DrawerHeader')
+  },
   data: () => ({
     gradient: 'rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)',
     items: [
