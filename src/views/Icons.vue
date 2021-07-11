@@ -21,7 +21,6 @@
           </v-icon>
         </v-col>
       </v-row>
-
     </v-card>
   </v-container>
 </template>

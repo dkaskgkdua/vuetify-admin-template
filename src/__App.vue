@@ -2,16 +2,15 @@
   <v-app>
     <v-app-bar
       v-if="$vuetify.breakpoint.xsOnly"
-      app/>
-    <v-navigation-drawer app>
-
-    </v-navigation-drawer>
+      app
+    />
+    <v-navigation-drawer app />
     <v-main>
       <v-container>
         컨텐츠 영역
-     </v-container>
+      </v-container>
     </v-main>
-    <v-footer app></v-footer>
+    <v-footer app />
   </v-app>
 </template>
 

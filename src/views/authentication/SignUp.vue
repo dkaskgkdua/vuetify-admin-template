@@ -33,9 +33,7 @@
             >
               가입하기
             </v-btn>
-
           </v-card-text>
-
         </v-card>
       </v-col>
     </v-row>

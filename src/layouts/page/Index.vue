@@ -1,8 +1,8 @@
 <template>
-<v-app>
-  <page-bar></page-bar>
-  <page-view></page-view>
-</v-app>
+  <v-app>
+    <page-bar />
+    <page-view />
+  </v-app>
 </template>
 
 <script>
