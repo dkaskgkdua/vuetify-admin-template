@@ -53,7 +53,7 @@ export default {
         { title: 'App Table', to: '/tables/app-table' },
       ] },
       { title: 'Forms', icon: 'mdi-form-select', items: [
-        { title: 'Validation Form', to: '/forms/validation-form' },
+        { title: 'Validation Form', to: '/forms' },
         { title: 'App Form', to: '/forms/app-form' },
       ] },
       { title: 'Buttons', icon: 'mdi-gesture-tap-button', to: '/buttons' },
