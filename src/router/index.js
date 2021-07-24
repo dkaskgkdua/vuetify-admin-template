@@ -101,12 +101,16 @@ const routes = [
   },
   {
     path: '/page',
-    component: PageLayout,
+    component: () => import(/* webpackChunkName: "layouts-page-index" */
+      '@/layouts/page/Index'
+    ),
     children: [
       {
         path: 'product-list',
         name: 'ProductList',
-        component: ProductList
+        component: import(/* webpackChunkName: "layouts-page-list" */
+          '@/views/page/ProductList'
+        ),
       }
     ]
   }
