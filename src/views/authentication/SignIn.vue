@@ -11,7 +11,6 @@
               v-slot="{ invalid }"
             >
               <v-form @submit.prevent="signIn">
-
                 <div class="text-h4 font-weight-bold mb-10">
                   로그인
                 </div>
@@ -60,12 +59,14 @@
                 <div class="mt-5">
                   <router-link
                     class="text-decoration-none"
-                    to="/">
+                    to="/"
+                  >
                     홈
                   </router-link> |
                   <router-link
                     class="text-decoration-none"
-                    to="/authentication/sign-up">
+                    to="/authentication/sign-up"
+                  >
                     회원가입
                   </router-link>
                 </div>

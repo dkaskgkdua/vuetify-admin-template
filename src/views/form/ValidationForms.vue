@@ -65,7 +65,7 @@
                 label="Select"
                 :items="items"
                 :error-messages="errors"
-              ></v-select>
+              />
             </validation-provider>
             <validation-provider
               v-slot="{ errors }"
@@ -94,8 +94,6 @@
             >
               Clear
             </v-btn>
-
-
           </v-form>
         </validation-observer>
       </v-card-text>
@@ -104,11 +102,12 @@
 </template>
 
 <script>
-
 export default {
   name: "Dashboard",
-
+  components: {
+  },
   data: () => ({
+    age: null,
     name: null,
     phoneNumber: null,
     email: null,

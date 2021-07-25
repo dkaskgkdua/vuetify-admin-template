@@ -52,18 +52,32 @@ const routes = [
           '@/views/Typography'),
       },
       {
-        path: '/tables',
-        name: 'Tables',
+        path: '/tables/basic-table',
+        name: 'BasicTables',
         component: () => import(
-          /* webpackChunkName: "views-tables" */
-          '@/views/Tables'),
+          /* webpackChunkName: "views-basic-tables" */
+          '@/views/table/BasicTables'),
       },
       {
-        path: '/forms',
-        name: 'Forms',
+        path: '/tables/app-table',
+        name: 'AppTables',
         component: () => import(
-          /* webpackChunkName: "views-forms" */
-          '@/views/Forms'),
+          /* webpackChunkName: "views-app-tables" */
+          '@/views/table/AppTables'),
+      },
+      {
+        path: '/forms/validation-form',
+        name: 'ValidationForm',
+        component: () => import(
+          /* webpackChunkName: "views-validation-forms" */
+          '@/views/form/ValidationForms'),
+      },
+      {
+        path: '/forms/app-form',
+        name: 'AppForm',
+        component: () => import(
+          /* webpackChunkName: "views-app-forms" */
+          '@/views/form/AppForms'),
       },
       {
         path: '/buttons',
